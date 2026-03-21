@@ -1,0 +1,20 @@
+# Compilação e Saída (O que o Java gera sozinho)
+/out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Configurações da IDE (IntelliJ)
+# Ignoramos a pasta .idea e arquivos .iml porque eles são específicos da sua máquina
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Arquivos do Sistema Operacional
+Thumbs.db
+.DS_Store
+
+# Se você usar Maven no futuro, adicione:
+/target/
