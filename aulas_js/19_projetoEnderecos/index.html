@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./js/addresscep.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>AddressCEP</title>
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-main">
+        <h1>AddressCEP</h1>
+        <div class="contact-link">Contato</div>
+      </nav>
+    </header>
+    <main>
+      <section id="form-section" class="form-container">
+        <div class="card-form">
+          <form name="newAddress">
+            <div class="form-control">
+              <label for="cep">CEP:</label>
+              <input
+                type="text"
+                name="cep"
+                class="form-input"
+                id="cep"
+                placeholder="CEP"
+              />
+              <div class="error-message" data-error="cep"></div>
+            </div>
+            <div class="form-control">
+              <label for="street">Logradouro:</label>
+              <input
+                type="text"
+                name="street"
+                class="form-input"
+                id="street"
+                placeholder="Logradouro"
+                disabled
+              />
+            </div>
+            <div class="form-control">
+              <label for="number">Número:</label>
+              <input
+                type="text"
+                name="number"
+                class="form-input"
+                id="number"
+                placeholder="Número"
+              />
+              <div class="error-message" data-error="number"></div>
+            </div>
+            <div class="form-control">
+              <label for="city">Cidade:</label>
+              <input
+                type="text"
+                name="city"
+                class="form-input"
+                id="city"
+                placeholder="Cidade"
+                disabled
+              />
+            </div>
+            <div class="btn-container">
+              <button name="btnSave" class="btn btn-left">Salvar</button>
+              <button name="btnClear" class="btn btn-right">Limpar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="list-section" class="list-container">
+        <div class="card-list-item">
+          <h3>Rio Grande do Sul</h3>
+          <p class="address-line">Rua da Alegria</p>
+          <p class="address-cep">92523-666</p>
+        </div>
+      </section>
+    </main>
+    <section id="modal-contanct" class="modal-container">
+      <div class="modal-box">
+        <div class="modal-content">
+          <p>@meucontato</p>
+          <p>(99) 9 9999-9999</p>
+        </div>
+        <button class="btn">Fechar</button>
+      </div>
+    </section>
+  </body>
+</html>

@@ -2,14 +2,16 @@ const cep = "92523666"
 
 const fetchResult = fetch(`https://viacep.com.br/ws/${cep}/json/`)
 
-async function getResponde(url) {
+async function getResponse(url) {
   const response = await fetch(url)
   const jsonResult = await response.json()
   return jsonResult
 }
 
-const result = getResponde(`https://viacep.com.br/ws/${cep}/json/`).then(
-  (response) => console.log(response),
-)
+async function getResult(cep) {
+  const url = `https://viacep.com.br/ws/${cep}/json/`
+  const json = await getResponse(url)
+  console.log(json)
+}
 
-console.log(result)
+getResult(cep)

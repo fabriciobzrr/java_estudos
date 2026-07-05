@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "modal.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+.nav-container {
+  height: 80px;
+  background-color: #ff0;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-main h1 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.contact-link {
+  cursor: pointer;
+  color: #333;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-container {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.card-form {
+  border-radius: 5px;
+  width: 100%;
+  background-color: #333;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 30px;
+}
+
+.form-control label {
+  display: none;
+}
+
+.error-message {
+  font-size: 10px;
+  color: #faa;
+}
+
+.form-input {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  &::placeholder {
+    color: #ccc;
+  }
+  &:disabled {
+    background-color: #eee;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ff0;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.btn-left {
+  margin-right: 10px;
+}
+
+.btn-right {
+  margin-left: 10px;
+}
+
+.list-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-list-item {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-list-item h3 {
+  color: #ff0;
+}
+
+.address-line {
+  color: #fff;
+}
+.address-cep {
+  color: #888;
+  font-size: 12px;
+}
